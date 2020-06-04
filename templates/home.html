@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--IF user is logged in-->
+{% if user.is_authenticated %}
+
+<div class="container">
+    <h1 class="alert alert-primary">USER IS LOGGED IN</h1>
+</div>
+
+{% else %}
+
+<div class="container">
+    <h1 class="alert alert-danger">USER IS LOGGED OUT</h1>
+</div>
+
+{% endif %}
+
+{% endblock %}
